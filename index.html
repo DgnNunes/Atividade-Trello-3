@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tela de Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="image-container">
+            <img src="caveira.jpg" alt="Imagem de fundo">
+        </div>
+        <form class="login-form">
+            <h1>Login</h1>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Entrar</button>
+            
+            <div class="row mt-6">
+               <span class="dont-account">Voce não tem conta? <br><br><br>
+                <b><button class="button">Cadastre-se</button></b></span>
+             </div>
+        </form>
+    </div>
+    <script>
+        function login(e) {
+             e.preventDefault()
+             const email = document.getElementById('inputEmail').value;
+             const password = document.getElementById('inputSenha').value;
+             const data = [
+                 {
+                     id: 1,
+                     email: 'douglas-nunes@gmail.com.br',
+                     senha: '12345678'
+                 }
+             ]
+             const result = data.find(item => item.email === email 
+                                             && item.senha === password)   
+             if (!result) {
+                 alert('Email e/ou senha incorretos.')
+             } else {
+                 alert('Bem vindo a sua conta')
+             }
+         }
+     </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Cor de fundo para a tela toda */
+}
+
+.login-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dividir a tela em duas colunas */
+    max-width: 2000px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3498db; /* Cor de fundo para a coluna da imagem */
+}
+
+.image-container img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da coluna */
+    height: auto;
+}
+
+.login-form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b3b3b3;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.mt-6{
+    margin-top: 6px;
+color: black ;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    color: black;
+    
+}
+.text-center{
+    text-align: center;
+}
